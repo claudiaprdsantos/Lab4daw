@@ -7,7 +7,6 @@ $db_passwd = "2638dc";
 function showerror($db) {
     die("Error " . mysqli_errno($db) . " : " . mysqli_error($db));
 }
-
 function dbconnect($hostname, $db_name, $db_user, $db_passwd) {
     $db = @ mysqli_connect($hostname, $db_user, $db_passwd, $db_name);
     if(!$db) {
